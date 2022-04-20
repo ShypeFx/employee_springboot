@@ -72,4 +72,12 @@ public class Employee {
     public void setPoste(String poste) {
         this.poste = poste;
     }
+
+    public boolean isEmpty(){
+        if(getEmail() == "" && getName() == "" && getFirstname() == "" && getPoste() == "" ){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
